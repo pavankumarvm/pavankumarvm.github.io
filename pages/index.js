@@ -58,6 +58,7 @@ const Home = () => {
         </div>
       </div>
       {/* image */}
+
       <div className="w-[1200px] h-full absolute right-0 bottom-0">
         {/* bg img */}
         <div

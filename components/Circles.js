@@ -8,7 +8,7 @@ const Circles = () => {
     mix-blend-color-dodge animate-pulse duration-75 z-10"
     >
       <Image
-        src={""}
+        src={"/circles.png"}
         width={260}
         height={200}
         className="w-full h-full"
