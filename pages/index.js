@@ -1,58 +1,35 @@
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import Head from "next/head";
+import Navbar from "../components/ui/Navbar";
+import Hero from "../components/sections/Hero";
+import About from "../components/sections/About";
+import Experience from "../components/sections/Experience";
+import Projects from "../components/sections/Projects";
+import Skills from "../components/sections/Skills";
+import Education from "../components/sections/Education";
+import Contact from "../components/sections/Contact";
+import Footer from "../components/ui/Footer";
 
-const Home = () => {
+export default function Home() {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a href="https://github.com/vercel/next.js/tree/canary/examples" className={styles.card}>
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
-          </a>
-        </div>
+    <>
+      <Head>
+        <title>Pavankumar Maurya – DevOps & Full-Stack Engineer</title>
+        <meta name="description" content="Portfolio of Pavankumar Maurya – Associate DevOps Engineer at SAP Labs India, Full-Stack Developer & AI/ML Enthusiast." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Pavankumar Maurya" />
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>" />
+      </Head>
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Education />
+        <Contact />
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
+      <Footer />
+    </>
   );
-};
-
-export default Home;
+}
