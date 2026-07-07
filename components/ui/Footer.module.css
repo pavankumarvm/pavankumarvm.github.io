@@ -26,7 +26,7 @@
 .logoIcon {
   width: 28px;
   height: 28px;
-  background: linear-gradient(135deg, #6c63ff, #a78bfa);
+  background: var(--gradient);
   border-radius: 7px;
   display: flex;
   align-items: center;
@@ -77,7 +77,7 @@
   transition: all 0.2s ease;
 }
 .social:hover {
-  background: rgba(108,99,255,0.1);
+  background: var(--accent-tint);
   border-color: var(--border);
   color: var(--accent-2);
 }
@@ -96,7 +96,7 @@
   transition: all 0.2s ease;
 }
 .scrollTop:hover {
-  background: rgba(108,99,255,0.1);
+  background: var(--accent-tint);
   border-color: var(--border);
   color: var(--accent-2);
 }

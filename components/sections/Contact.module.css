@@ -50,7 +50,7 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  background: rgba(108,99,255,0.1);
+  background: var(--accent-tint);
   border: 1px solid var(--border);
   display: flex;
   align-items: center;
@@ -115,7 +115,7 @@
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(108,99,255,0.12), transparent 70%);
+  background: radial-gradient(circle, var(--accent-tint-hover), transparent 70%);
   top: -80px;
   left: 50%;
   transform: translateX(-50%);
@@ -182,7 +182,7 @@
   justify-content: center;
 }
 .socialBtn:hover {
-  background: rgba(108,99,255,0.1);
+  background: var(--accent-tint);
   border-color: var(--border);
   color: var(--accent-2);
   transform: translateY(-2px);

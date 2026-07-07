@@ -151,7 +151,7 @@ export default function Hero() {
                 transition={{ duration: 3 + i * 0.4, repeat: Infinity, ease: "easeInOut", delay: i * 0.3 }}
               >
                 <TechIcon name={b.name} size={13} color={b.color} />
-                <span style={{ color: "#eeeeff" }}>{b.name}</span>
+                <span style={{ color: "var(--text-primary)" }}>{b.name}</span>
               </motion.div>
             ))}
           </div>
