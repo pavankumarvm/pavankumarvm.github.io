@@ -1,87 +1,56 @@
-// next image
 import Image from "next/image";
-
-// components
-import ParticlesContainer from "@/components/ParticlesContainer";
-import ProjectsBtn from "@/components/ProjectsBtn";
-import Avatar from "@/components/Avatar";
-
-// framer-motion
-import { motion } from "framer-motion";
-
-// variants
-import { fadeIn } from "../variants";
+import styles from "../styles/Home.module.css";
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-full">
-      {/* text */}
-      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
-          {/* title */}
-          <motion.h1
-            variants={fadeIn("down", 0.2)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="h1"
-          >
-            Pavankumar
-            <span className="text-accent"> Maurya</span>
-          </motion.h1>
-          {/* subtitle */}
-          <motion.p
-            variants={fadeIn("down", 0.3)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque tempus luctus felis, at ultrices mi porta eu. Aenean
-            imperdiet et felis nec vehicula. Nulla facilisis elit ut ipsum
-            rhoncus, quis condimentum ipsum consequat.
-          </motion.p>
-          {/* btn */}
-          <div className="flex justify-center xl:hidden relative">
-            <ProjectsBtn />
-          </div>
-          <motion.div
-            variants={fadeIn("down", 0.4)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="hidden xl:flex"
-          >
-            <ProjectsBtn />
-          </motion.div>
-        </div>
-      </div>
-      {/* image */}
+    <div className={styles.container}>
+      <main className={styles.main}>
+        <h1 className={styles.title}>
+          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        </h1>
 
-      <div className="w-[1200px] h-full absolute right-0 bottom-0">
-        {/* bg img */}
-        <div
-          className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right
-        xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
-        ></div>
-        {/* particles */}
-        <div>
-          <ParticlesContainer />
+        <p className={styles.description}>
+          Get started by editing <code className={styles.code}>pages/index.js</code>
+        </p>
+
+        <div className={styles.grid}>
+          <a href="https://nextjs.org/docs" className={styles.card}>
+            <h2>Documentation &rarr;</h2>
+            <p>Find in-depth information about Next.js features and API.</p>
+          </a>
+
+          <a href="https://nextjs.org/learn" className={styles.card}>
+            <h2>Learn &rarr;</h2>
+            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          </a>
+
+          <a href="https://github.com/vercel/next.js/tree/canary/examples" className={styles.card}>
+            <h2>Examples &rarr;</h2>
+            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          </a>
+
+          <a
+            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            className={styles.card}
+          >
+            <h2>Deploy &rarr;</h2>
+            <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
+          </a>
         </div>
-        {/* avatar img */}
-        <motion.div
-          variants={fadeIn("up", 0.5)}
-          initial="hidden"
-          animate="show"
-          exit="hidden"
-          transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[737px] max-h-[678px] absolute 
-          -bottom-32 lg:bottom-0 lg:right-[8%]"
+      </main>
+
+      <footer className={styles.footer}>
+        <a
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <Avatar />
-        </motion.div>
-      </div>
+          Powered by{" "}
+          <span className={styles.logo}>
+            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          </span>
+        </a>
+      </footer>
     </div>
   );
 };
