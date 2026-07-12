@@ -22,10 +22,19 @@ export const experience = [
     role: "Associate DevOps Engineer",
     duration: "Aug 2023 – Present",
     type: "Full-Time",
-    location: "Pune, India",
+    location: "Bangalore, India",
     color: "#6c63ff",
     logo: "SAP",
-    tech: ["Vue.js", "Java", "Spring Boot", "Jenkins", "Python", "Dynatrace", "MCP", "GenAI"],
+    tech: [
+      "Vue.js",
+      "Java",
+      "Spring Boot",
+      "Jenkins",
+      "Python",
+      "Dynatrace",
+      "MCP",
+      "GenAI",
+    ],
     points: [
       "Developed frontend & backend for OSM (Shift Management Tool) and CHALET (Change Management Tool)",
       "Integrated Joule AI with OSM to build an interactive GenAI-powered chatbot",
@@ -40,10 +49,18 @@ export const experience = [
     role: "Full-Stack Developer Intern",
     duration: "Jan 2022 – Jun 2022",
     type: "Internship",
-    location: "Remote",
+    location: "Pune, India",
     color: "#a78bfa",
     logo: "UC",
-    tech: ["Angular", "TypeScript", "NodeJS", "ButterCMS", "HTML", "CSS", "Bootstrap"],
+    tech: [
+      "Angular",
+      "TypeScript",
+      "NodeJS",
+      "ButterCMS",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+    ],
     points: [
       "Designed the Flight Landing Page for the desktop site",
       "Worked on content management and updates through Butter CMS",
@@ -58,7 +75,14 @@ export const experience = [
     location: "Remote",
     color: "#00b4d8",
     logo: "MP",
-    tech: ["Flutter", "Django REST", "Firebase", "AWS", "JavaScript", "Bootstrap"],
+    tech: [
+      "Flutter",
+      "Django REST",
+      "Firebase",
+      "AWS",
+      "JavaScript",
+      "Bootstrap",
+    ],
     points: [
       "Streamlined internal admin portal resulting in 75% reduction in administrative workload",
       "Developed Subscription, Wallet, Payment & Premium Content modules for Mobile App (100K+ downloads)",
@@ -68,15 +92,48 @@ export const experience = [
 
 export const projects = [
   {
-    title: "GenAI Chatbot for OSM",
-    duration: "2024",
-    role: "DevOps / AI Engineer",
+    title: "CMA Satna School Website",
+    link: "https://cmasatna.in/",
+    duration: "Aug 2023-Sep 2023",
+    role: "Full-Stack Developer",
     description:
-      "Integrated SAP Joule AI into the OSM Shift Management tool, enabling natural language interaction for shift queries and management tasks with full GenAI capabilities.",
-    tech: ["Vue.js", "Java", "Spring Boot", "Joule AI", "Python"],
-    tags: ["GenAI", "Enterprise", "Chatbot"],
+      "Developed a responsive website for CMA Satna School with feature like admin panel for content management, certificate download options.",
+    tech: ["Django", "HTML", "CSS", "Bootstrap", "JavaScript", "Vercel"],
     color: "#6c63ff",
-    icon: "🤖",
+    icon: "🏫",
+  },
+  {
+    title: "ICOQuizTime",
+    link: "https://icoquiztime.com/",
+    duration: "Jun 2023-Aug 2023",
+    role: "Full-Stack Developer, Wix Developer",
+    description:
+      "Developed a responsive website for ICO Quiz Time with features like quiz management, user authentication, and leaderboard in Django Pyhton. Later, on request, migrated the website to Wix for better performance and scalability.",
+    tech: ["Wix", "JavaScript", "HTML", "CSS", "Django"],
+    color: "#00b4d8",
+    icon: "📝",
+  },
+  {
+    title: "PSF Events",
+    link: "https://www.poonawallastudfarmsevents.com/",
+    duration: "Nov 2025",
+    role: "Wix Developer",
+    description:
+      "Developed a responsive website for PSF Events with features like user registration, and video integration in Wix.",
+    tech: ["Wix", "JavaScript", "HTML", "CSS"],
+    color: "#f72585",
+    icon: "🎉",
+  },
+  {
+    title: "Kirloskar Events Website",
+    link: "https://www.kirloskarevents.com/",
+    duration: "Nov 2025",
+    role: "Wix Developer",
+    description:
+      "Developed a responsive website for Kirloskar Events with features like user registration, access control, and video integration in Wix.",
+    tech: ["Wix", "JavaScript", "HTML", "CSS"],
+    color: "#f72585",
+    icon: "🎉",
   },
   {
     title: "Stock Market Price Prediction",
@@ -84,7 +141,14 @@ export const projects = [
     role: "ML Engineer",
     description:
       "Comparative study on stock market prices using multiple ML algorithms — CNN-BiLSTM, CNN-LSTM, ARIMA, KNN — benchmarked for accurate prediction and analysis.",
-    tech: ["Python", "CNN-LSTM", "CNN-BiLSTM", "ARIMA", "KNN", "Linear Regression"],
+    tech: [
+      "Python",
+      "CNN-LSTM",
+      "CNN-BiLSTM",
+      "ARIMA",
+      "KNN",
+      "Linear Regression",
+    ],
     tags: ["Machine Learning", "Data Science", "Time Series"],
     color: "#a78bfa",
     icon: "📈",
@@ -114,14 +178,21 @@ export const projects = [
 ];
 
 export const skills = {
-  "Languages": ["Python", "Java", "JavaScript", "TypeScript", "C", "C++"],
-  "Frontend": ["Vue.js", "ReactJS", "Angular", "HTML5", "CSS3", "Bootstrap"],
-  "Backend": ["Spring Boot", "Django REST", "Node.js"],
-  "Mobile": ["Flutter", "React Native"],
+  Languages: ["Python", "Java", "JavaScript", "TypeScript", "C", "C++"],
+  Frontend: ["Vue.js", "ReactJS", "Angular", "HTML5", "CSS3", "Bootstrap"],
+  Backend: ["Spring Boot", "Django REST", "Node.js"],
+  Mobile: ["Flutter", "React Native"],
   "DevOps & Cloud": ["Jenkins", "Dynatrace", "AWS", "Firebase", "Docker"],
-  "AI / ML": ["CNN-LSTM", "ARIMA", "Scikit-learn", "Pandas", "NumPy", "MCP Servers"],
-  "Databases": ["PostgreSQL", "MySQL", "Firebase Firestore"],
-  "Tools": ["Git", "GitHub", "Jira", "Postman", "VS Code", "IntelliJ"],
+  "AI / ML": [
+    "CNN-LSTM",
+    "ARIMA",
+    "Scikit-learn",
+    "Pandas",
+    "NumPy",
+    "MCP Servers",
+  ],
+  Databases: ["PostgreSQL", "MySQL", "Firebase Firestore"],
+  Tools: ["Git", "GitHub", "Jira", "Postman", "VS Code", "IntelliJ"],
 };
 
 export const education = [
