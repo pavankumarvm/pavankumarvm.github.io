@@ -9,11 +9,9 @@ export const personal = {
   github: "https://github.com/pavankumarvm",
   bio: "Passionate about building scalable full-stack applications, cloud automation, and AI-driven solutions that solve real business problems.",
   taglines: [
-    "Freelance Web, Mobile & AI Projects",
     "Associate DevOps Engineer @ SAP Labs",
     "Full-Stack Developer",
     "AI & ML Enthusiast",
-    "DevOps Engineer",
   ],
 };
 

@@ -11,12 +11,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>
-          Pavankumar Maurya – Freelance Full-Stack, DevOps & AI Engineer
-        </title>
+        <title>Pavankumar Maurya – Full-Stack, DevOps & AI Engineer</title>
         <meta
           name="description"
-          content="Portfolio of Pavankumar Maurya – Associate DevOps Engineer at SAP Labs India, freelance full-stack developer and AI/ML consultant available for client projects."
+          content="Portfolio of Pavankumar Maurya – Associate DevOps Engineer at SAP Labs India, freelance full-stack developer and AI/ML enthusiast."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Pavankumar Maurya" />

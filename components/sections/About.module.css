@@ -82,10 +82,29 @@
 }
 
 @media (max-width: 768px) {
-  .grid { grid-template-columns: 1fr; gap: 32px; }
-  .right { grid-template-columns: 1fr 1fr; }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .actions {
+    justify-content: center;
+  }
+  .right {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .right {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    padding: 18px;
+  }
 }
 
 @media (max-width: 480px) {
-  .right { grid-template-columns: 1fr; }
+  .right {
+    grid-template-columns: 1fr;
+  }
 }

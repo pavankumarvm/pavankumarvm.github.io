@@ -20,7 +20,7 @@
 }
 
 .cta {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 22px;
   font-weight: 700;
   color: var(--text-primary);
@@ -41,7 +41,7 @@
 
 .channel {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 16px;
   padding: 16px 20px;
 }
@@ -57,6 +57,7 @@
   justify-content: center;
   color: var(--accent-2);
   flex-shrink: 0;
+  margin-top: 4px;
 }
 
 .channelInfo {
@@ -78,9 +79,10 @@
   font-size: 14px;
   font-weight: 500;
   color: var(--text-primary);
+  flex-wrap: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: normal;
   display: block;
 }
 
@@ -98,10 +100,15 @@
   transition: all 0.2s ease;
   flex-shrink: 0;
 }
-.copyBtn:hover { background: var(--bg-card-hover); color: var(--accent-2); border-color: var(--border); }
+.copyBtn:hover {
+  background: var(--bg-card-hover);
+  color: var(--accent-2);
+  border-color: var(--border);
+}
 
 /* ── CTA Card ── */
-.right {}
+.right {
+}
 
 .ctaCard {
   padding: 36px;
@@ -115,7 +122,11 @@
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background: radial-gradient(circle, var(--accent-tint-hover), transparent 70%);
+  background: radial-gradient(
+    circle,
+    var(--accent-tint-hover),
+    transparent 70%
+  );
   top: -80px;
   left: 50%;
   transform: translateX(-50%);
@@ -123,7 +134,7 @@
 }
 
 .ctaTitle {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: var(--text-primary);
@@ -189,5 +200,22 @@
 }
 
 @media (max-width: 768px) {
-  .grid { grid-template-columns: 1fr; gap: 32px; }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .ctaCard {
+    padding: 28px;
+  }
+  .channel {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .socialRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .socialBtn {
+    width: 100%;
+  }
 }
