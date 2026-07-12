@@ -45,14 +45,11 @@ export default function Contact() {
             whileInView="show"
             viewport={viewportOnce}
           >
-            <h3 className={styles.cta}>
-              Freelance, contract & product work welcome
-            </h3>
+            <h3 className={styles.cta}>Opportunities, questions, or ideas?</h3>
             <p className={styles.body}>
-              I&apos;m available for freelance projects, short-term contracts,
-              and product collaborations. Whether you need a web app, mobile
-              solution, cloud automation, or AI prototype, let&apos;s discuss
-              how I can help deliver it.
+              I&apos;m open to new opportunities, collaborations, and
+              interesting projects. If you have an idea, a question, or just
+              want to say hello, feel free to reach out.
             </p>
 
             <motion.div

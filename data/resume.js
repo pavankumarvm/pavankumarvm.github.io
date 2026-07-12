@@ -7,7 +7,7 @@ export const personal = {
   phone: "+91 9158686367",
   linkedin: "https://linkedin.com/in/pavankumarvm",
   github: "https://github.com/pavankumarvm",
-  bio: "Associate DevOps Engineer at SAP Labs India with a passion for building scalable full-stack applications, cloud automation, and AI-driven products. I partner with clients to deliver polished freelance web, mobile, and AI solutions that solve real business problems.",
+  bio: "Passionate about building scalable full-stack applications, cloud automation, and AI-driven solutions that solve real business problems.",
   taglines: [
     "Freelance Web, Mobile & AI Projects",
     "Associate DevOps Engineer @ SAP Labs",

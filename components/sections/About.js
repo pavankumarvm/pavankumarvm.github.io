@@ -54,32 +54,25 @@ export default function About() {
             viewport={viewportOnce}
           >
             <p className={styles.intro}>
-              I&apos;m a passionate{" "}
-              <strong>Associate DevOps Engineer at SAP Labs India</strong>,
-              working at the intersection of full-stack development, DevOps
-              automation, and AI/ML integration. With an M.Tech in Computer
-              Science (AI & DS) from NIT Allahabad, I bring a strong academic
-              foundation combined with hands-on industry experience.
+              I&apos;m an Associate DevOps Engineer at SAP Labs India focused on
+              full-stack development, cloud automation, and practical AI
+              solutions.
             </p>
             <p className={styles.body}>
-              At SAP, I&apos;ve built and shipped production-grade tools
-              including the OSM Shift Management Tool and CHALET Change
-              Management Tool. I integrated SAP&apos;s Joule AI to create a
-              GenAI-powered chatbot, implemented observability with Dynatrace,
-              and built AI Agents using MCP Server frameworks.
+              I help build reliable tools and workflows for teams. That includes
+              web applications, automation pipelines, and AI-enabled features.
+              The goal is to make things easier to run and easier to improve.
             </p>
             <p className={styles.body}>
-              I also work directly with startups and clients to launch web apps,
-              mobile products, and automation solutions that drive outcomes
-              fast. Whether it&apos;s a high-impact MVP or an AI-enabled
-              feature, I deliver polished solutions with strong technical
-              foundations.
+              I have worked with startups and clients to launch web apps, mobile
+              products, and cloud automation that move projects forward. Whether
+              it&apos;s an MVP, an AI prototype, or a polished product feature,
+              I keep the focus on delivery and practical value.
             </p>
             <p className={styles.body}>
-              I thrive on building things — whether it&apos;s a Flutter mobile
-              app with 100K+ downloads, a stock prediction model benchmarking
-              CNN-BiLSTM architectures, or automating enterprise workflows with
-              Jenkins pipelines.
+              I enjoy building solutions that solve real problems, from mobile
+              experiences and deployment pipelines to automation and AI
+              integrations.
             </p>
             <div className={styles.actions}>
               <motion.a

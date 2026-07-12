@@ -5,31 +5,37 @@ import styles from "./Services.module.css";
 const services = [
   {
     title: "Web & SaaS Applications",
+    icon: "🌐",
     description:
       "Build responsive, production-ready web apps, dashboards, and SaaS products using modern front-end and backend stacks.",
   },
   {
     title: "Mobile Apps",
+    icon: "📱",
     description:
       "Deliver Flutter and React Native mobile experiences with backend integration, push notifications, and app store readiness.",
   },
   {
-    title: "AI / ML Prototypes",
+    title: "AI Agents/ ML Models",
+    icon: "🤖",
     description:
       "Create intelligent features, prediction models, and generative AI tools that add real business value to your product.",
   },
   {
     title: "DevOps & Cloud Automation",
+    icon: "☁️",
     description:
       "Automate deployments, CI/CD, monitoring, and infrastructure workflows for faster releases and more reliable production systems.",
   },
   {
     title: "Wix & Marketing Websites",
+    icon: "🛠️",
     description:
       "Design and launch fast, easy-to-manage Wix websites and landing pages focused on conversion and client updates.",
   },
   {
     title: "MVP & Product Launch",
+    icon: "🚀",
     description:
       "Turn your idea into a working MVP quickly, with product-focused development and a clear launch path.",
   },
@@ -64,7 +70,7 @@ export default function Services() {
           whileInView="show"
           viewport={viewportOnce}
         >
-          {services.map((service) => (
+          {services.map((service, index) => (
             <motion.div
               key={service.title}
               className={`card ${styles.card}`}
@@ -72,7 +78,12 @@ export default function Services() {
               whileHover={{ y: -6, scale: 1.02 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
-              <h3 className={styles.title}>{service.title}</h3>
+              <div className={styles.cardTop}>
+                <span className={styles.badge}>{service.icon}</span>
+                <div>
+                  <h3 className={styles.title}>{service.title}</h3>
+                </div>
+              </div>
               <p className={styles.description}>{service.description}</p>
             </motion.div>
           ))}

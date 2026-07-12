@@ -6,6 +6,29 @@
   position: relative;
   overflow: hidden;
   padding: calc(var(--nav-height) + 60px) 0 80px;
+  background-image:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(108, 99, 255, 0.08),
+      transparent 18%
+    ),
+    radial-gradient(
+      circle at 80% 18%,
+      rgba(167, 139, 250, 0.05),
+      transparent 16%
+    );
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 35%,
+    rgba(255, 255, 255, 0.04),
+    transparent 40%
+  );
+  pointer-events: none;
 }
 
 .orb1 {
