@@ -1,14 +1,15 @@
 export const personal = {
   name: "Pavankumar Maurya",
-  title: "Associate DevOps Engineer",
-  subtitle: "Full-Stack Developer & AI Enthusiast",
+  title: "Associate DevOps Engineer | Freelance Full-Stack & AI Engineer",
+  subtitle: "Full-Stack, DevOps, AI/ML & Freelance Solutions",
   location: "Pune, Maharashtra, India",
   email: "pavankumarmaurya1999@gmail.com",
   phone: "+91 9158686367",
   linkedin: "https://linkedin.com/in/pavankumarvm",
   github: "https://github.com/pavankumarvm",
-  bio: "Associate DevOps Engineer at SAP Labs India with a passion for building scalable full-stack applications and integrating cutting-edge AI technologies. M.Tech in CS (AI & DS) from NIT Allahabad with a CGPA of 9.07.",
+  bio: "Associate DevOps Engineer at SAP Labs India with a passion for building scalable full-stack applications, cloud automation, and AI-driven products. I partner with clients to deliver polished freelance web, mobile, and AI solutions that solve real business problems.",
   taglines: [
+    "Freelance Web, Mobile & AI Projects",
     "Associate DevOps Engineer @ SAP Labs",
     "Full-Stack Developer",
     "AI & ML Enthusiast",
@@ -86,7 +87,7 @@ export const projects = [
       "Bootstrap",
     ],
     description:
-      "Streamlined internal admin portal resulting in 75% reduction in administrative workload. Implemented a secure payment gateway and subscription model, enhancing user experience and increasing revenue by 30%.",
+      "Delivered the Flutter app and Django backend as a freelance client project. Streamlined the admin portal with a secure payment gateway and subscription model, reducing administrative workload by 75% and boosting revenue by 30%.",
     tags: ["Mobile App", "Full-Stack", "Freelance"],
     icon: "📱",
   },
@@ -96,7 +97,7 @@ export const projects = [
     duration: "Aug 2023-Sep 2023",
     role: "Full-Stack Developer",
     description:
-      "Developed a responsive website for CMA Satna School with feature like admin panel for content management, certificate download options.",
+      "Built a responsive website for CMA Satna School with a client-friendly admin panel for content updates and downloadable certificates, reducing manual updates and improving parent communication.",
     tech: ["Django", "HTML", "CSS", "Bootstrap", "JavaScript", "Vercel"],
     tags: ["Full-Stack", "Web Development", "Freelance"],
     color: "#6c63ff",
@@ -108,7 +109,7 @@ export const projects = [
     duration: "Jun 2023-Aug 2023",
     role: "Full-Stack Developer, Wix Developer",
     description:
-      "Developed a responsive website for ICO Quiz Time with features like quiz management, user authentication, and leaderboard in Django Pyhton. Later, on request, migrated the website to Wix for better performance, scalability and to reduce costs.",
+      "Built ICO Quiz Time with quiz management, user authentication, and leaderboard functionality. Later migrated the site to Wix to improve performance, scalability, and cost efficiency for the client.",
     tech: ["Wix", "JavaScript", "HTML", "CSS", "Django"],
     tags: ["Full-Stack", "Web Development", "Wix", "Freelance"],
     color: "#00b4d8",
@@ -120,7 +121,7 @@ export const projects = [
     duration: "Nov 2025",
     role: "Wix Developer",
     description:
-      "Developed a responsive website for PSF Events with features like user registration, and video integration in Wix.",
+      "Delivered a polished Wix website for PSF Events with user registration and video integration, helping the client launch event marketing quickly and professionally.",
     tech: ["Wix", "JavaScript", "HTML", "CSS"],
     tags: ["Web Development", "Wix", "Freelance"],
     color: "#f72585",
@@ -132,7 +133,7 @@ export const projects = [
     duration: "Nov 2025",
     role: "Wix Developer",
     description:
-      "Developed a responsive website for Kirloskar Events with features like user registration, access control, and video integration in Wix.",
+      "Delivered a polished Wix website for Kirloskar Events with user registration, access control, and video integration, helping the client launch a professional event brand quickly.",
     tech: ["Wix", "JavaScript", "HTML", "CSS"],
     tags: ["Web Development", "Wix", "Freelance"],
     color: "#f72585",
