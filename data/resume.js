@@ -46,6 +46,7 @@ export const experience = [
   },
   {
     company: "Udchalo (UpCurve Consumer Tech.)",
+    link: "https://www.udchalo.com/",
     role: "Full-Stack Developer Intern",
     duration: "Jan 2022 – Jun 2022",
     type: "Internship",
@@ -67,14 +68,15 @@ export const experience = [
       "Built Admin Panel for Vacation Features to manage holiday web content",
     ],
   },
+];
+
+export const projects = [
   {
-    company: "Marwar Print",
-    role: "App & Backend Developer (Freelance)",
+    title: "Marwar Print (100K+ Downloads)",
+    link: "https://play.google.com/store/apps/details?id=com.pro_buzz.buzzimage",
+    role: "Mobile App & Backend Developer (Freelance)",
     duration: "Jul 2021 – Oct 2021",
-    type: "Freelance",
-    location: "Remote",
     color: "#00b4d8",
-    logo: "MP",
     tech: [
       "Flutter",
       "Django REST",
@@ -83,14 +85,11 @@ export const experience = [
       "JavaScript",
       "Bootstrap",
     ],
-    points: [
-      "Streamlined internal admin portal resulting in 75% reduction in administrative workload",
-      "Developed Subscription, Wallet, Payment & Premium Content modules for Mobile App (100K+ downloads)",
-    ],
+    description:
+      "Streamlined internal admin portal resulting in 75% reduction in administrative workload. Implemented a secure payment gateway and subscription model, enhancing user experience and increasing revenue by 30%.",
+    tags: ["Mobile App", "Full-Stack", "Freelance"],
+    icon: "📱",
   },
-];
-
-export const projects = [
   {
     title: "CMA Satna School Website",
     link: "https://cmasatna.in/",
@@ -99,6 +98,7 @@ export const projects = [
     description:
       "Developed a responsive website for CMA Satna School with feature like admin panel for content management, certificate download options.",
     tech: ["Django", "HTML", "CSS", "Bootstrap", "JavaScript", "Vercel"],
+    tags: ["Full-Stack", "Web Development", "Freelance"],
     color: "#6c63ff",
     icon: "🏫",
   },
@@ -108,8 +108,9 @@ export const projects = [
     duration: "Jun 2023-Aug 2023",
     role: "Full-Stack Developer, Wix Developer",
     description:
-      "Developed a responsive website for ICO Quiz Time with features like quiz management, user authentication, and leaderboard in Django Pyhton. Later, on request, migrated the website to Wix for better performance and scalability.",
+      "Developed a responsive website for ICO Quiz Time with features like quiz management, user authentication, and leaderboard in Django Pyhton. Later, on request, migrated the website to Wix for better performance, scalability and to reduce costs.",
     tech: ["Wix", "JavaScript", "HTML", "CSS", "Django"],
+    tags: ["Full-Stack", "Web Development", "Wix", "Freelance"],
     color: "#00b4d8",
     icon: "📝",
   },
@@ -121,6 +122,7 @@ export const projects = [
     description:
       "Developed a responsive website for PSF Events with features like user registration, and video integration in Wix.",
     tech: ["Wix", "JavaScript", "HTML", "CSS"],
+    tags: ["Web Development", "Wix", "Freelance"],
     color: "#f72585",
     icon: "🎉",
   },
@@ -132,6 +134,7 @@ export const projects = [
     description:
       "Developed a responsive website for Kirloskar Events with features like user registration, access control, and video integration in Wix.",
     tech: ["Wix", "JavaScript", "HTML", "CSS"],
+    tags: ["Web Development", "Wix", "Freelance"],
     color: "#f72585",
     icon: "🎉",
   },
@@ -179,7 +182,7 @@ export const projects = [
 
 export const skills = {
   Languages: ["Python", "Java", "JavaScript", "TypeScript", "C", "C++"],
-  Frontend: ["Vue.js", "ReactJS", "Angular", "HTML5", "CSS3", "Bootstrap"],
+  Frontend: ["Vue.js", "ReactJS", "Angular", "HTML5", "CSS", "Bootstrap"],
   Backend: ["Spring Boot", "Django REST", "Node.js"],
   Mobile: ["Flutter", "React Native"],
   "DevOps & Cloud": ["Jenkins", "Dynatrace", "AWS", "Firebase", "Docker"],

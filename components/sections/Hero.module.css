@@ -236,7 +236,12 @@
   position: absolute;
   inset: -2px;
   border-radius: 50%;
-  background: conic-gradient(from 0deg, var(--accent), var(--accent-2), var(--accent));
+  background: conic-gradient(
+    from 0deg,
+    var(--accent),
+    var(--accent-2),
+    var(--accent)
+  );
   animation: spin 8s linear infinite;
   mask: radial-gradient(
     farthest-side,
@@ -308,7 +313,7 @@
 }
 .ob3 {
   bottom: 6px;
-  left: 50%;
+  left: 10%;
   transform: translateX(-50%);
 }
 .ob4 {
@@ -337,6 +342,11 @@
 .ob9 {
   top: 16%;
   left: -14px;
+}
+.ob10 {
+  bottom: 60px;
+  right: 5%;
+  transform: translateX(-50%);
 }
 
 /* ── Scroll indicator ── */

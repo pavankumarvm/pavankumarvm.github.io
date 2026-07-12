@@ -8,23 +8,54 @@ export default function Projects() {
   return (
     <section className="section" id="projects">
       <div className="container">
-        <motion.div className={styles.header} variants={fadeUp} initial="hidden" whileInView="show" viewport={viewportOnce}>
+        <motion.div
+          className={styles.header}
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={viewportOnce}
+        >
           <p className="section-label">Portfolio</p>
-          <h2 className="section-title">Featured <span>Projects</span></h2>
+          <h2 className="section-title">
+            Featured <span>Projects</span>
+          </h2>
           <div className="divider" />
-          <p className={styles.subtitle}>A selection of projects I&apos;ve built — from AI-powered enterprise tools to ML research.</p>
+          <p className={styles.subtitle}>
+            A selection of projects I&apos;ve built — from custom web
+            applications, wix websites to mobile applications.
+          </p>
         </motion.div>
 
-        <motion.div className={styles.grid} variants={stagger(0.12)} initial="hidden" whileInView="show" viewport={viewportOnce}>
+        <motion.div
+          className={styles.grid}
+          variants={stagger(0.12)}
+          initial="hidden"
+          whileInView="show"
+          viewport={viewportOnce}
+        >
           {projects.map((p) => (
-            <motion.div key={p.title} className={`card ${styles.card}`} variants={scaleIn} whileHover={{ y: -6, scale: 1.02 }} transition={{ type: "spring", stiffness: 300, damping: 20 }}>
+            <motion.div
+              key={p.title}
+              className={`card ${styles.card}`}
+              variants={scaleIn}
+              whileHover={{ y: -6, scale: 1.02 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            >
               <div className={styles.cardTop}>
-                <div className={styles.iconWrap} style={{ background: `${p.color}18`, border: `1px solid ${p.color}30` }}>
+                <div
+                  className={styles.iconWrap}
+                  style={{
+                    background: `${p.color}18`,
+                    border: `1px solid ${p.color}30`,
+                  }}
+                >
                   <span className={styles.icon}>{p.icon}</span>
                 </div>
                 <div className={styles.topRight}>
                   {p.tags.map((tag) => (
-                    <span key={tag} className={styles.tagSmall}>{tag}</span>
+                    <span key={tag} className={styles.tagSmall}>
+                      {tag}
+                    </span>
                   ))}
                 </div>
               </div>
@@ -46,7 +77,12 @@ export default function Projects() {
                 ))}
               </div>
 
-              <div className={styles.accentLine} style={{ background: `linear-gradient(90deg, ${p.color}, transparent)` }} />
+              <div
+                className={styles.accentLine}
+                style={{
+                  background: `linear-gradient(90deg, ${p.color}, transparent)`,
+                }}
+              />
             </motion.div>
           ))}
         </motion.div>
